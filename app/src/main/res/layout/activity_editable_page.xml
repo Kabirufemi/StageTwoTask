@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditablePageActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name :"
+            android:textSize="18dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="150dp"
+            android:hint="Enter Your Name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Slack Name :"
+            android:textSize="18dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/etSlackName"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="160dp"
+            android:hint="Enter Your Slack Name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Github Handle :"
+            android:textSize="18dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/etGithubHandle"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="180dp"
+            android:hint="Enter Your Github Handle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Personal Details :"
+            android:textSize="18dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/etPersonalDetails"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_marginStart="190dp"
+            android:hint="Enter Your Details"/>
+
+        <Button
+            android:id="@+id/btnSaveAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:text="save"
+            android:textAllCaps="true"
+            android:textSize="25sp"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
